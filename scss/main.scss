@@ -131,6 +131,12 @@ main {
   .job-3 {
     grid-area: job3;
   }
+  .job-4 {
+    grid-area: job4;
+  }
+  .job-5 {
+    grid-area: job5;
+  }
 
   .job {
     background: lighten($primary-color, 5);
