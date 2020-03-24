@@ -99,8 +99,9 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
-    'acadamic acadamic'
-    'job1 job2 job3 job4';
+    'acadamic1 acadamic2'
+    'job1 job2 job3'
+    'job4 job5 myArea';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -130,6 +131,12 @@ main {
 
   .job-3 {
     grid-area: job3;
+  }
+  .job-4 {
+    grid-area: job4;
+  }
+  .job-5 {
+    grid-area: job5;
   }
 
   .job {
@@ -207,10 +214,12 @@ main {
 }
 
 .btn-light {
+
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
-}
+  
+} 
 
 #main-footer {
   text-align: center;
